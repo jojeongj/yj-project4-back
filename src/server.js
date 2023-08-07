@@ -10,7 +10,10 @@ const PORT = 8080;
 const app = express();
 
 const corsOptions = {
-    origin: ["http://localhost:3000"],
+    origin: [
+        "http://localhost:3000",
+        "https://jocular-lollipop-5f783d.netlify.app",
+    ],
     methods: ["GET", "POST"],
     credentials: true,
 };
